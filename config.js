@@ -1,8 +1,8 @@
 const config = {
   // Bot Settings
-  botName: 'Naze Bot',
+  botName: 'Shenx',
   ownerName: 'Owner',
-  ownerNumber: ['628xxxxxxxxxx@s.whatsapp.net'],
+  ownerNumber: ['628892155121@s.whatsapp.net'],
   
   // API Settings
   apikey: 'nz-55d9381817',
