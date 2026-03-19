@@ -49,14 +49,6 @@ async function startBot() {
     generateHighQualityLinkPreview: true
   });
 
-  // Pairing Code
-  if (!sock.authState.creds.registered) {
-    const phoneNumber = await question(chalk.yellow('\n[?] Masukkan nomor WhatsApp (contoh: 628xxxxxxxxxx): '));
-    const code = await sock.requestPairingCode(phoneNumber);
-    console.log(chalk.green(`\n[✓] Kode Pairing: ${code}`));
-    console.log(chalk.cyan('[i] Buka WhatsApp > Perangkat Tertaut > Tautkan Perangkat\n'));
-  }
-
   // Connection Update
   sock.ev.on('connection.update', async (update) => {
     const { connection, lastDisconnect, qr } = update;
