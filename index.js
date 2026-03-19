@@ -40,7 +40,7 @@ async function startBot() {
   const sock = makeWASocket({
     version,
     logger,
-    printQRInTerminal: false, // Disable QR, use pairing code
+    printQRInTerminal: true, // Disable QR, use pairing code
     auth: {
       creds: state.creds,
       keys: makeCacheableSignalKeyStore(state.keys, logger)
